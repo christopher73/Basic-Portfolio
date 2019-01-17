@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+  <link rel="stylesheet" href="./css/reset.css" />
+
   <link rel="stylesheet" href="./css/style.css" />
   <meta charset="UTF-8" />
   <title>Hello World</title>
@@ -21,15 +23,19 @@
     <h1>Contact Me</h1>
     <hr />
 
-    <p>
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </p>
+    <form
+      action="mailto:christopher.fajardo73@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <h1>Send me an email !!!</h1>
+
+      Name: <input type="text" name="name" /><br /><br />
+      E-mail: <input type="text" name="mail" /><br /><br />
+      Comment: <input type="text" name="comment" size="50" /><br /><br />
+      <input class="buttom" type="submit" value="Send" />
+      <input class="buttom" type="reset" value="Reset" />
+    </form>
   </div>
+  <footer>2019</footer>
 </body>

@@ -1,7 +1,15 @@
+html {
+  height: 100%;
+}
 body {
-  background-image: url("../attributes/background.jpg");
+  background-image: url("../attributes/city.jpg");
   background-size: 100% auto;
-  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
 }
 nav {
   width: 100%;
@@ -20,9 +28,6 @@ ul {
 li {
   float: right;
 }
-hr {
-  background-color: yellow;
-}
 li a {
   display: block;
   color: white;
@@ -30,38 +35,69 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover {
   background-color: yellow;
-  opacity: 0.8;
   color: black;
 }
 
+/* this css is for all pages */
 .content {
   background-color: black;
-  color: white;
-  margin: auto;
+  color: rgb(200, 206, 170);
+  margin: 0 auto;
   width: 960px;
+  height: 80vh;
   padding: 5px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  text-align: left;
+  border-radius: 25px;
 }
 p {
   padding: 5px;
 }
-
 img {
   float: left;
   width: 150px;
   height: 200px;
 }
-
-div.gallery {
-  margin: 10px;
+form {
   padding: 5px;
+  text-align: center;
+}
+input {
+  padding: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 15px;
+  grid-gap: 15px;
+}
+.gallery {
+  margin: auto;
   border: 1px solid #ccc;
-  float: left;
   width: 180px;
+  text-align: center;
 }
 .gallery img {
   width: 100%;
   height: auto;
+}
+footer {
+  position: absolute;
+  padding: 15px;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.buttom {
+  height: 40px;
+  width: 80px;
+  background-color: rgb(200, 206, 170);
+  padding: 15px;
+  font-size: 1em;
 }
