@@ -1,12 +1,2 @@
-# columbiaProgram
-
-practice
-
-# During this project I learned the following :
-
-- in css
-
-  - grids
-
-- in html
-  - form
+# PorfolioV2
+Porfolio v.2
