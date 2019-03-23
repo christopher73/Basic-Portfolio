@@ -27,24 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
           labels: [
             "JS",
             "CSS/Html",
-            "Node.JS",
-            "Mysql",
-            "MongoDB",
-            "C++",
+            "AxiosJS",
+            "Bootstrap",
+            "Jquery",
+            "API level",
             "Git"
           ],
           datasets: [
             {
-              label: [
-                "JS",
-                "CSS/Html",
-                "Node.JS",
-                "Mysql",
-                "MongoDB",
-                "C++",
-                "Git"
-              ],
-              data: [9, 9, 7, 6, 5, 4, 6],
+              data: [9, 9, 7, 6, 5, 8, 9],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
@@ -99,24 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
           labels: [
             "JS",
             "CSS/Html",
-            "Node.JS",
-            "Mysql",
-            "MongoDB",
-            "C++",
+            "Jquery",
+            "Api level",
+            "AxiosJS",
+            "Bootstrap",
             "Git"
           ],
           datasets: [
             {
-              label: [
-                "JS",
-                "CSS/Html",
-                "Node.JS",
-                "Mysql",
-                "MongoDB",
-                "C++",
-                "Git"
-              ],
-              data: [9, 9, 7, 6, 5, 4, 6],
+              data: [9, 6, 6, 5, 5, 7, 6],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
@@ -168,27 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
       var myChart2 = new Chart(ctx3, {
         type: "horizontalBar",
         data: {
-          labels: [
-            "JS",
-            "CSS/Html",
-            "Node.JS",
-            "Mysql",
-            "MongoDB",
-            "C++",
-            "Git"
-          ],
+          labels: ["JS", "CSS/Html", "Jquery", "Bootstrap", "Git"],
           datasets: [
             {
-              label: [
-                "JS",
-                "CSS/Html",
-                "Node.JS",
-                "Mysql",
-                "MongoDB",
-                "C++",
-                "Git"
-              ],
-              data: [9, 9, 7, 6, 5, 4, 6],
+              data: [9, 6, 8, 4, 8],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
@@ -240,27 +205,10 @@ document.addEventListener("DOMContentLoaded", () => {
       var myChart2 = new Chart(ctx4, {
         type: "horizontalBar",
         data: {
-          labels: [
-            "JS",
-            "CSS/Html",
-            "Node.JS",
-            "Mysql",
-            "MongoDB",
-            "C++",
-            "Git"
-          ],
+          labels: ["JS", "CSS/Html", "Jquery", "Git"],
           datasets: [
             {
-              label: [
-                "JS",
-                "CSS/Html",
-                "Node.JS",
-                "Mysql",
-                "MongoDB",
-                "C++",
-                "Git"
-              ],
-              data: [9, 9, 7, 6, 5, 4, 6],
+              data: [9, 7, 8, 6],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",

@@ -5,6 +5,27 @@ html {
 * {
   font-family: "Roboto Mono", monospace;
 }
+.terminal {
+  margin-bottom: 4%;
+  padding: 0;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #101c28;
+  border-radius: 25px;
+}
+.terminal-2 {
+  margin: auto;
+  padding: 0;
+  opacity: 1;
+  background-color: #101c28;
+  border-radius: 25px;
+}
+.card-image {
+  margin: 3%;
+}
+.project-chart {
+  height: 100%;
+}
 .navbar * {
   color: white;
   background-color: #101c28;
@@ -26,21 +47,7 @@ html {
 .portfolioDiv.fade-in {
   opacity: 1;
 }
-.terminal {
-  margin-bottom: 4%;
-  padding: 0;
-  text-align: center;
-  opacity: 0.8;
-  background-color: #101c28;
-  border-radius: 25px;
-}
-.terminal-2 {
-  margin-bottom: 4%;
-  padding: 0;
-  opacity: 1;
-  background-color: #101c28;
-  border-radius: 25px;
-}
+
 .button.is-link {
   background-color: #579c87;
 }

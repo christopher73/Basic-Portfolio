@@ -48,6 +48,7 @@
         </div>
       </div>
     </nav>
+    <!-- ======================================= intro ==================================================== -->
     <section id="intro" class="hero columns is-mobile is-vcentered is-centered">
       <div class="terminal card column is-10">
         <div class="card-image">
@@ -58,39 +59,179 @@
         </div>
       </div>
     </section>
+    <!-- ======================================= slide1 ==================================================== -->
 
     <article id="slide01" class="hero is-fullheight is-fullwidth">
-      <div class="columns ">
+      <div class="columns">
         <div class="head-title column is-12">
           <h1 class="title is-1 is-size-3-mobile">Porfolio</h1>
         </div>
       </div>
+      <!-- --------------------------------------------project--------------------------------------------- -->
       <div class="portfolioDiv columns ">
-        <div class="chart-container column is-6">
-          <canvas id="wrapper1"></canvas>
+        <div class="card terminal-2 column is-6 ">
+          <div class="card-image">
+            <figure class="image is-2by1">
+              <img src="./assets/images/p1.gif" alt="P1" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">
+                  Flight Search API + others (Lets Travel App)
+                </p>
+                <a
+                  class="is-link project-link"
+                  href="https://github.com/christopher73/Project_1"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>
+                In this project we called up to 5 API to determinated Weather,
+                track User's IP, cheap flights and images of destinations. The
+                focus of this application was in it's backend.
+              </p>
+              <p>
+                I selected the origin of our travelers by identifying their
+                public IP and the destination by generating an array of multiple
+                states, after the client clicks on the button (id =
+                btn-ClientSubmit) it generates a random element from the
+                "destination" array, given us our target destination (note: this
+                might not be the only random element selected, this function can
+                be triggered multiple times if the api respond with "no tickets
+                found for the destination" in which in that case our recursion
+                funtion will trigger the whole function (flightserach) again if
+                an error is found)
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="terminal-2 column is-6"></div>
+        <div class=" column is-6">
+          <div class="hero project-chart columns  is-vcentered is-centered">
+            <canvas class="column is-12" id="wrapper1"></canvas>
+          </div>
+        </div>
       </div>
+      <!-- <----------------------------------------------project--------------------------------------------- -->
+
       <div class="portfolioDiv columns ">
-        <div class="terminal-2 column is-6"></div>
-        <div class="chart-container column is-6">
-          <canvas id="wrapper2"></canvas>
+        <div class="card terminal-2 column is-6 ">
+          <div class="card-image">
+            <figure class="image is-2by1">
+              <a href="https://christopher73.github.io/GifTastic/">
+                <img src="./assets/images/p3.gif" alt="P3"
+              /></a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">
+                  Simple app using Giphy's API (GifTastic)
+                </p>
+                <a
+                  class="is-link project-link"
+                  href="https://github.com/christopher73/GifTastic"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="content">
+              In this project I use the giphy API to pull gif images into my
+              project and a lot of Jquery to animate them and Boostrap for css
+              help
+            </div>
+          </div>
+        </div>
+        <div class=" column is-6">
+          <div class="hero project-chart columns  is-vcentered is-centered">
+            <canvas class="column is-12" id="wrapper2"></canvas>
+          </div>
         </div>
       </div>
+      <!-- <----------------------------------------------project-------------------------------------------- -->
+
       <div class="portfolioDiv columns ">
-        <div class="chart-container column is-6">
-          <canvas id="wrapper3"></canvas>
+        <div class="card terminal-2 column is-6 ">
+          <div class="card-image">
+            <figure class="image is-2by1">
+              <a href="https://github.com/christopher73/TriviaGame"
+                ><img src="./assets/images/p4.gif" alt="P4"
+              /></a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Star Wars RPG</p>
+                <a
+                  class="is-link project-link"
+                  href="https://github.com/christopher73/TriviaGame"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </div>
+          </div>
         </div>
-        <div class="terminal-2 column is-6"></div>
-      </div>
-      <div class="portfolioDiv columns ">
-        <div class="terminal-2 column is-6"></div>
-        <div class="chart-container column is-6">
-          <canvas id="wrapper4"></canvas>
+        <div class=" column is-6">
+          <div class="hero project-chart columns  is-vcentered is-centered">
+            <canvas class="column is-12" id="wrapper3"></canvas>
+          </div>
         </div>
       </div>
+      <!-- --------------------------------------------project--------------------------------------------- -->
+
+      <div class="portfolioDiv columns">
+        <div class="card terminal-2 column is-6 ">
+          <div class="card-image">
+            <figure class="image is-2by1">
+              <a href="https://christopher73.github.io/Word_guess_game">
+                <img src="./assets/images/p2.gif" alt="P2"
+              /></a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Guess What Pokemon</p>
+                <a
+                  class="is-link project-link"
+                  href="https://github.com/christopher73/word_guess_game"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </div>
+          </div>
+        </div>
+        <div class=" column is-6">
+          <div class="hero project-chart columns  is-vcentered is-centered">
+            <canvas class="column is-12" id="wrapper4"></canvas>
+          </div>
+        </div>
+      </div>
+
       <!-- .wrapper -->
     </article>
+    <!-- ======================================= slide2 ==================================================== -->
 
     <article id="slide02" class="hero is-fullheight ">
       <div class="container columns">
@@ -306,6 +447,7 @@
         </div>
       </div>
     </article>
+    <!-- ======================================= slide3 ==================================================== -->
 
     <article id="slide03" class="hero is-fullheight ">
       <div class="container columns">
@@ -313,7 +455,7 @@
           <h1 class="title is-1 is-size-3-mobile">Contact</h1>
         </div>
       </div>
-      <div class="terminal-2 container is-centered">
+      <div class="terminal container is-centered">
         <div class="card">
           <div class="card-image ">
             <img
