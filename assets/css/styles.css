@@ -274,7 +274,7 @@ section:last-child {
   #cv ul {
     margin: 0;
   }
-  a {
+  #cv a {
     display: none;
   }
   #headshot {
