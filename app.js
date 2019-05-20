@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  var trigger = document.querySelector(".card-content").offsetTop;
-  var ele = document.querySelector("#intro");
-  window.onscroll = function() {
-    if (window.pageYOffset > 0) {
-      var opac = window.pageYOffset / trigger;
-      ele.style.background =
-        "linear-gradient(rgba(1, 19, 19, " +
-        opac +
-        "), rgba(1, 19, 19, " +
-        opac +
-        ")), url(./assets/images/nycb.jpg) no-repeat center";
-    }
-  };
+  // var trigger = document.querySelector(".card-content").offsetTop;
+  // var ele = document.querySelector("#intro");
+  // window.onscroll = function() {
+  //   if (window.pageYOffset > 0) {
+  //     var opac = window.pageYOffset / trigger;
+  //     ele.style.background =
+  //       "linear-gradient(rgba(25, 169, 143," +
+  //       opac +
+  //       "), rgba(25, 169, 143," +
+  //       opac +
+  //       ")), url(./assets/images/blu.jpg) no-repeat center";
+  //   }
+  // };
   // ==========================================scroll magic ========================================================
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "AxiosJS",
             "Bootstrap",
             "Jquery",
-            "API level",
+            "API calls",
             "Git"
           ],
           datasets: [
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ticks: {
                   fontFamily: `"Roboto Mono", monospace`,
                   fontSize: 18,
-                  fontColor: "white"
+                  fontColor: "#101c28"
                 }
               }
             ],
@@ -94,17 +94,19 @@ document.addEventListener("DOMContentLoaded", () => {
             "Api level",
             "AxiosJS",
             "Bootstrap",
+
             "Git"
           ],
           datasets: [
             {
-              data: [9, 6, 6, 5, 5, 7, 6],
+              data: [9, 6, 6, 4, 5, 7, 6],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
                 "rgb(75, 192, 192)",
                 "rgb(255, 206, 86)",
                 "rgb(153, 102, 255)",
+
                 "rgb(90, 20, 42)",
                 "rgb(255, 159, 64)"
               ],
@@ -130,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ticks: {
                   fontFamily: `"Roboto Mono", monospace`,
                   fontSize: 18,
-                  fontColor: "white"
+                  fontColor: "#101c28"
                 }
               }
             ],
@@ -150,16 +152,24 @@ document.addEventListener("DOMContentLoaded", () => {
       var myChart2 = new Chart(ctx3, {
         type: "horizontalBar",
         data: {
-          labels: ["JS", "CSS/Html", "Jquery", "Bootstrap", "Git"],
+          labels: [
+            "ExpressJS",
+            "CherioJS",
+            "MongoDB",
+            "Mongoose",
+            "CSS/Html",
+            "Bootstrap",
+            "Git"
+          ],
           datasets: [
             {
-              data: [9, 6, 8, 4, 8],
+              data: [9, 7, 7, 6, 3, 6, 8],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
                 "rgb(75, 192, 192)",
                 "rgb(255, 206, 86)",
-                "rgb(153, 102, 255)",
+                "rgb(1, 19, 19)",
                 "rgb(90, 20, 42)",
                 "rgb(255, 159, 64)"
               ],
@@ -185,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ticks: {
                   fontFamily: `"Roboto Mono", monospace`,
                   fontSize: 18,
-                  fontColor: "white"
+                  fontColor: "#101c28"
                 }
               }
             ],
@@ -213,10 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
                 "rgb(75, 192, 192)",
-                "rgb(255, 206, 86)",
-                "rgb(153, 102, 255)",
-                "rgb(90, 20, 42)",
-                "rgb(255, 159, 64)"
+                "rgb(255, 206, 86)"
               ],
               borderWidth: 1
             }
@@ -240,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ticks: {
                   fontFamily: `"Roboto Mono", monospace`,
                   fontSize: 18,
-                  fontColor: "white"
+                  fontColor: "#101c28"
                 }
               }
             ],
@@ -297,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   var typed_terminal = new Typed("#para", {
     strings: [
-      `Christopher Fajardo<br/>Full-Stack Developer<br/><br/><br/><p id="scroll-down" class="hero-foot">[Scroll down]<i class="em em-point_down"></i><p/>`
+      `Christopher Fajardo<br/>{Full-Stack} Developer<br/><br/><br/><p id="scroll-down" class="hero-foot">[Scroll down]<i class="em em-point_down"></i><p/>`
     ],
     cursorChar: "",
     typeSpeed: 40
