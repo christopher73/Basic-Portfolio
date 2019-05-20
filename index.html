@@ -1,566 +1,544 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top is-fullwidth" lang="en">
-  <head>
-    <title>Christopher Fajardo</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar is-fixed-top">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="./index.html">
-          ~>
-          <h1 id="logo"></h1>
-        </a>
-        <div class="navbar-burger burger" data-target="navbarList">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
 
-      <div id="navbarList" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item" href="#slide01">
-            Porfolio
-          </a>
-          <a class="navbar-item " href="#slide02">
-            About
-          </a>
-          <a class="navbar-item " href="#slide03">
-            Contact
-          </a>
+<head>
+  <title>Christopher Fajardo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <nav class="navbar is-fixed-top">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./index.html">
+        ~>
+        <h1 id="logo"></h1>
+      </a>
+      <div class="navbar-burger burger" data-target="navbarList">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarList" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#slide01">
+          Porfolio
+        </a>
+        <a class="navbar-item " href="#slide02">
+          About
+        </a>
+        <a class="navbar-item " href="#slide03">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- ======================================= intro ==================================================== -->
+  <section id="intro" class="hero columns is-mobile is-vcentered is-centered">
+    <div class="terminal card column is-10">
+      <div class="card-image">
+        <img id="me" src="./assets/images/me.jpeg" alt="Me" />
+      </div>
+      <div class="card-content">
+        <h1 class="title is-1 is-size-3-mobile " id="para"></h1>
+      </div>
+    </div>
+  </section>
+  <!-- ======================================= slide1 ==================================================== -->
+
+  <article id="slide01" class="hero is-fullheight is-fullwidth">
+    <div class="columns">
+      <div class="head-title column is-12">
+        <h1 class="title is-1 is-size-3-mobile">Porfolio</h1>
+      </div>
+    </div>
+    <!-- --------------------------------------------project--------------------------------------------- -->
+    <div class="portfolioDiv columns ">
+      <div class="card terminal-2 column is-6 ">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <a href="https://github.com/christopher73/Project_1">
+              <img src="./assets/images/p1.gif" alt="P1" /></a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">
+                Flight Search App
+                <a class="is-link project-link" href="https://github.com/christopher73/Project_1">
+                  <i class="fab fa-github"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <p>
+              This application provide us with a quick flight ticket search which selects a random getaway destination
+              for you, Also we use various APIs to display the destination Weather and key pictures of the destination's
+              area !
+            </p>
+            <p>
+              To select the origin of our travelers we identified their
+              public IP and the destination by generating an array of multiple
+              desired states, after the client clicks on the SEARCH button the application generates a random element
+              from the
+              "destination" array, given us our target destination (note: this
+              might not be the only random element selected, this function can
+              be triggered multiple times if the api respond with "no tickets
+              found for the destination" in which in that case our recursion
+              function will trigger the whole function (flightSerach) again if
+              an error is found)
+            </p>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- ======================================= intro ==================================================== -->
-    <section id="intro" class="hero columns is-mobile is-vcentered is-centered">
-      <div class="terminal card column is-10">
+      <div class=" column is-6">
+        <div class="hero project-chart columns  is-vcentered is-centered">
+          <canvas class="column is-12" id="wrapper1"></canvas>
+        </div>
+      </div>
+    </div>
+    <!-- <----------------------------------------------project-------------------------------------------- -->
+
+    <div class="portfolioDiv columns ">
+      <div class="card terminal-2 column is-6 ">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <a href="https://node-web-scraper-app.herokuapp.com/"><img src="./assets/images/news.gif" alt="P4" /></a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">
+                Web Scraper
+                <a class="is-link project-link" href="https://github.com/christopher73/news_app">
+                  <i class="fab fa-github"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            Ever needed to take notes while searching for News Articles ???. Well this application can help you gather
+            the latest news from the New
+            York Times Website and allows you to add comments on each article
+            you save (yes!!! that's right you can save the article to a
+            MongoDB database to access it later as well as all your comments )
+          </div>
+        </div>
+      </div>
+      <div class=" column is-6">
+        <div class="hero project-chart columns  is-vcentered is-centered">
+          <canvas class="column is-12" id="wrapper3"></canvas>
+        </div>
+      </div>
+    </div>
+    <!-- <----------------------------------------------project--------------------------------------------- -->
+
+    <div class="portfolioDiv columns ">
+      <div class="card terminal-2 column is-6 ">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <a href="https://christopher73.github.io/GifTastic/">
+              <img src="./assets/images/p3.gif" alt="P3" /></a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">
+                Simple app using Giphy's API (GifTastic)
+                <a class="is-link project-link" href="https://github.com/christopher73/GifTastic">
+                  <i class="fab fa-github"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            In this project I use the giphy API to pull gif images into my
+            project and a lot of Jquery to animate them and Boostrap for css
+            help
+          </div>
+        </div>
+      </div>
+      <div class=" column is-6">
+        <div class="hero project-chart columns  is-vcentered is-centered">
+          <canvas class="column is-12" id="wrapper2"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- <----------------------------------------------project--------------------------------------------- -->
+
+    <div class="portfolioDiv columns ">
+      <div class="card terminal-2 column is-6 ">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <a href="https://christopher73.github.io/GifTastic/">
+              <img src="./assets/images/burger.gif" alt="P3" /></a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">
+                Simple app using Giphy's API (GifTastic)
+                <a class="is-link project-link" href="https://github.com/christopher73/GifTastic">
+                  <i class="fab fa-github"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            In this project I use the giphy API to pull gif images into my
+            project and a lot of Jquery to animate them and Boostrap for css
+            help
+          </div>
+        </div>
+      </div>
+      <div class=" column is-6">
+        <div class="hero project-chart columns  is-vcentered is-centered">
+          <canvas class="column is-12" id="wrapper-"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------------------project--------------------------------------------- -->
+
+    <div class="portfolioDiv columns">
+      <div class="card terminal-2 column is-6 ">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <a href="https://christopher73.github.io/Word_guess_game">
+              <img src="./assets/images/p2.gif" alt="P2" /></a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">
+                Guess What Pokemon
+                <a class="is-link project-link" href="https://github.com/christopher73/word_guess_game">
+                  <i class="fab fa-github"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
+          </div>
+        </div>
+      </div>
+      <div class=" column is-6">
+        <div class="hero project-chart columns  is-vcentered is-centered">
+          <canvas class="column is-12" id="wrapper4"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- .wrapper -->
+  </article>
+  <!-- ======================================= slide2 ==================================================== -->
+
+  <article id="slide02" class="hero is-fullheight ">
+    <div class="container columns">
+      <div class="head-title column is-12">
+        <h1 class="title is-1 is-size-3-mobile">About</h1>
+      </div>
+    </div>
+    <div class="terminal-2 container is-centered">
+      <div class="card">
         <div class="card-image">
           <img id="me" src="./assets/images/me.jpeg" alt="Me" />
         </div>
         <div class="card-content">
-          <h1 class="title is-1 is-size-3-mobile " id="para"></h1>
-        </div>
-      </div>
-    </section>
-    <!-- ======================================= slide1 ==================================================== -->
-
-    <article id="slide01" class="hero is-fullheight is-fullwidth">
-      <div class="columns">
-        <div class="head-title column is-12">
-          <h1 class="title is-1 is-size-3-mobile">Porfolio</h1>
-        </div>
-      </div>
-      <!-- --------------------------------------------project--------------------------------------------- -->
-      <div class="portfolioDiv columns ">
-        <div class="card terminal-2 column is-6 ">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <a href="https://github.com/christopher73/Project_1">
-                <img src="./assets/images/p1.gif" alt="P1"
-              /></a>
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">
-                  Flight Search App
-                  <a
-                    class="is-link project-link"
-                    href="https://github.com/christopher73/Project_1"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </p>
+          <div class="content is-large ">
+            <p>
+              My name is Christopher Fajardo and I am a web developer from New
+              York City. I have a BS in Computer Science from the College of
+              Staten Island.
+            </p>
+            <p>
+              I'm currently working at a small IT company in the lower
+              Manhattan, there I have many roles such as maintaining and
+              deploying RESTful APIs services that run on Linux.
+            </p>
+            <p>
+              In addition to my regular job, I also worked on many personal
+              projects using the MERN Stack (MongoDB, Express.js , React.js,
+              Node.js)
+            </p>
+            <div class="field is-grouped is-pulled-center">
+              <div class="control">
+                <button id="show-cv" class="button is-link">
+                  Show CV &nbsp;&nbsp;
+                  <i class="em em-face_with_monocle"> </i>
+                </button>
+              </div>
+              <div class="control">
+                <button id="download-cv" class="button is-link">
+                  Download &nbsp;&nbsp; <i class="em em-eyes"></i>
+                </button>
               </div>
             </div>
-
-            <div class="content">
-              <p>
-                In this project we called up to 5 API to determinated Weather,
-                track User's IP, cheap flights and images of destinations. The
-                focus of this application was in it's backend.
-              </p>
-              <p>
-                I selected the origin of our travelers by identifying their
-                public IP and the destination by generating an array of multiple
-                states, after the client clicks on the button (id =
-                btn-ClientSubmit) it generates a random element from the
-                "destination" array, given us our target destination (note: this
-                might not be the only random element selected, this function can
-                be triggered multiple times if the api respond with "no tickets
-                found for the destination" in which in that case our recursion
-                funtion will trigger the whole function (flightserach) again if
-                an error is found)
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class=" column is-6">
-          <div class="hero project-chart columns  is-vcentered is-centered">
-            <canvas class="column is-12" id="wrapper1"></canvas>
-          </div>
-        </div>
-      </div>
-      <!-- <----------------------------------------------project-------------------------------------------- -->
-
-      <div class="portfolioDiv columns ">
-        <div class="card terminal-2 column is-6 ">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <a href="https://web-scraper-christopher73.herokuapp.com/"
-                ><img src="./assets/images/news.gif" alt="P4"
-              /></a>
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">
-                  Web Scraper
-                  <a
-                    class="is-link project-link"
-                    href="https://github.com/christopher73/news_app"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="content">
-              This application helps you gather the latest news from the New
-              York Times Website and allows you to add comments on each article
-              you save (yes!!! that's right you can save the article to a
-              MongoDB database)
-            </div>
-          </div>
-        </div>
-        <div class=" column is-6">
-          <div class="hero project-chart columns  is-vcentered is-centered">
-            <canvas class="column is-12" id="wrapper3"></canvas>
-          </div>
-        </div>
-      </div>
-      <!-- <----------------------------------------------project--------------------------------------------- -->
-
-      <div class="portfolioDiv columns ">
-        <div class="card terminal-2 column is-6 ">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <a href="https://christopher73.github.io/GifTastic/">
-                <img src="./assets/images/p3.gif" alt="P3"
-              /></a>
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">
-                  Simple app using Giphy's API (GifTastic)
-                  <a
-                    class="is-link project-link"
-                    href="https://github.com/christopher73/GifTastic"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="content">
-              In this project I use the giphy API to pull gif images into my
-              project and a lot of Jquery to animate them and Boostrap for css
-              help
-            </div>
-          </div>
-        </div>
-        <div class=" column is-6">
-          <div class="hero project-chart columns  is-vcentered is-centered">
-            <canvas class="column is-12" id="wrapper2"></canvas>
-          </div>
-        </div>
-      </div>
-
-      <!-- --------------------------------------------project--------------------------------------------- -->
-
-      <div class="portfolioDiv columns">
-        <div class="card terminal-2 column is-6 ">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <a href="https://christopher73.github.io/Word_guess_game">
-                <img src="./assets/images/p2.gif" alt="P2"
-              /></a>
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">
-                  Guess What Pokemon
-                  <a
-                    class="is-link project-link"
-                    href="https://github.com/christopher73/word_guess_game"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris.
-            </div>
-          </div>
-        </div>
-        <div class=" column is-6">
-          <div class="hero project-chart columns  is-vcentered is-centered">
-            <canvas class="column is-12" id="wrapper4"></canvas>
-          </div>
-        </div>
-      </div>
-
-      <!-- .wrapper -->
-    </article>
-    <!-- ======================================= slide2 ==================================================== -->
-
-    <article id="slide02" class="hero is-fullheight ">
-      <div class="container columns">
-        <div class="head-title column is-12">
-          <h1 class="title is-1 is-size-3-mobile">About</h1>
-        </div>
-      </div>
-      <div class="terminal-2 container is-centered">
-        <div class="card">
-          <div class="card-image">
-            <img id="me" src="./assets/images/me.jpeg" alt="Me" />
-          </div>
-          <div class="card-content">
-            <div class="content is-large ">
-              <p>
-                My name is Christopher Fajardo and I am a web developer from New
-                York City. I have a BS in Computer Science from the College of
-                Staten Island.
-              </p>
-              <p>
-                I'm currently working at a small IT company in the lower
-                Manhattan, there I have many roles such as maintaining and
-                deploying RESTful APIs services that run on Linux.
-              </p>
-              <p>
-                In addition to my regular job, I also worked on many personal
-                projects using the MERN Stack (MongoDB, Express.js , React.js,
-                Node.js)
-              </p>
-              <div class="field is-grouped is-pulled-center">
-                <div class="control">
-                  <button id="show-cv" class="button is-link">
-                    Show CV &nbsp;&nbsp;
-                    <i class="em em-face_with_monocle"> </i>
-                  </button>
+            <!-- ================== cv ================== -->
+            <div id="cv" class="is-hidden instaFade container">
+              <div class="mainDetails">
+                <div id="headshot" class="quickFade">
+                  <img src="./assets/images/me-cv.jpg" alt="C-F" />
                 </div>
-                <div class="control">
-                  <button id="download-cv" class="button is-link">
-                    Download &nbsp;&nbsp; <i class="em em-eyes"></i>
-                  </button>
+                <div id="name">
+                  <h1 class="quickFade delayTwo">Christopher Fajardo</h1>
                 </div>
+
+                <div id="contactDetails" class="quickFade delayFour">
+                  <ul>
+                    <li>
+                      <i class="fas fa-envelope"></i>
+                      <a href="mailto:christopher.fajardo73@gmail.com">
+                        christopher.fajardo73@gmail.com
+                      </a>
+                    </li>
+                    <li>
+                      <i class="fas fa-globe"></i>
+
+                      <a href="http://www.c-fajardo.com">
+                        www.c-fajardo.com</a>
+                    </li>
+                    <li href="https://www.github.com/christopher73">
+                      <i class="fab fa-github"></i>
+                      <a> www.github.com/christopher73</a>
+                    </li>
+
+                    <li href="https://www.linkedin.com/in/cffr90">
+                      <i class="fab fa-linkedin"></i>
+                      <a> www.linkedin.com/in/cffr90 </a>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-mobile"></i>
+                      <a>(347)393-1012</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clear"></div>
               </div>
-              <!-- ================== cv ================== -->
-              <div id="cv" class="is-hidden instaFade container">
-                <div class="mainDetails">
-                  <div id="headshot" class="quickFade">
-                    <img src="./assets/images/me-cv.jpg" alt="C-F" />
-                  </div>
-                  <div id="name">
-                    <h1 class="quickFade delayTwo">Christopher Fajardo</h1>
+
+              <div id="mainArea" class="quickFade delayFive">
+                <section>
+                  <article>
+                    <div class="sectionTitle">
+                      <h1>Personal Profile</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                      <p>
+                        My name is Christopher Fajardo and I am a web
+                        developer from New York City. I have a BS in Computer
+                        Science from the College of Staten Island. I'm
+                        currently working at a small IT company in the lower
+                        Manhattan, there I have many roles such as maintaining
+                        and deploying RESTful APIs services that run on Linux.
+                        In addition to my regular job, I also worked on many
+                        personal projects using the MERN Stack (MongoDB,
+                        Express.js , React.js, Node.js)
+                      </p>
+                    </div>
+                  </article>
+                  <div class="clear"></div>
+                </section>
+
+                <section>
+                  <div class="sectionTitle">
+                    <h1>Work Experience</h1>
                   </div>
 
-                  <div id="contactDetails" class="quickFade delayFour">
-                    <ul>
-                      <li>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:christopher.fajardo73@gmail.com">
-                          christopher.fajardo73@gmail.com
-                        </a>
-                      </li>
-                      <li>
-                        <i class="fas fa-globe"></i>
+                  <div class="sectionContent">
+                    <article>
+                      <h2>Jr. DevOps - Shark Byte Systems, Inc</h2>
+                      <p class="subDetails">March 2017 - Present</p>
+                      <p>
+                        ● Built and maintained AWS servers running on Ubuntu
+                        and Debian.
+                        <br />
+                        ● Working on an Agile development team using Jira,
+                        BitBuckets, and Jenkins.
+                        <br />
+                        ● Using Ansible to create Linux environments for our
+                        many services.
+                        <br />
+                        ● Developed bug fixes for front-end using Javascript
+                        and cHTML.
+                        <br />
+                        ● Developed Bash scripts to speed up deployment and
+                        improve technical support on our servers.
+                        <br />
+                      </p>
+                    </article>
 
-                        <a href="http://www.c-fajardo.com">
-                          www.c-fajardo.com</a
-                        >
-                      </li>
-                      <li href="https://www.github.com/christopher73">
-                        <i class="fab fa-github"></i>
-                        <a> www.github.com/christopher73</a>
-                      </li>
+                    <article>
+                      <h2>Intern - High Performance Computing Center</h2>
+                      <p class="subDetails">February 2016 - Decemeber 2016</p>
+                      <p>
+                        ● Provided IT support to faculty, staff and students.
+                        <br />
+                        ● Assisted users by providing/creating ssh keys and
+                        permissions in the servers.
+                        <br />
+                        ● Helped users create a secured environment in their
+                        work-station.
+                        <br />
+                        ● Maintained IT center technical equipment.
+                        <br />● Ran regular checks, tests, and tracking
+                        procedures to prevent or identify problems.
+                      </p>
+                    </article>
+                  </div>
+                  <div class="clear"></div>
+                </section>
 
-                      <li href="https://www.linkedin.com/in/cffr90">
-                        <i class="fab fa-linkedin"></i>
-                        <a> www.linkedin.com/in/cffr90 </a>
-                      </li>
+                <section>
+                  <div class="sectionTitle">
+                    <h1>Key Skills</h1>
+                  </div>
 
-                      <li>
-                        <i class="fas fa-mobile"></i>
-                        <a>(347)393-1012</a>
-                      </li>
+                  <div class="sectionContent">
+                    <ul class="keySkills">
+                      <li>> React</li>
+                      <li>> Redux</li>
+                      <li>> ES6</li>
+                      <li>> Express</li>
+                      <li>> MongoDB</li>
+                      <li>> Sass</li>
+                      <li>> Linux</li>
+                      <li>> Nginx</li>
+                      <li>> Git</li>
                     </ul>
                   </div>
                   <div class="clear"></div>
-                </div>
+                </section>
 
-                <div id="mainArea" class="quickFade delayFive">
-                  <section>
+                <section>
+                  <div class="sectionTitle">
+                    <h1>Education</h1>
+                  </div>
+
+                  <div class="sectionContent">
                     <article>
-                      <div class="sectionTitle">
-                        <h1>Personal Profile</h1>
-                      </div>
-
-                      <div class="sectionContent">
-                        <p>
-                          My name is Christopher Fajardo and I am a web
-                          developer from New York City. I have a BS in Computer
-                          Science from the College of Staten Island. I'm
-                          currently working at a small IT company in the lower
-                          Manhattan, there I have many roles such as maintaining
-                          and deploying RESTful APIs services that run on Linux.
-                          In addition to my regular job, I also worked on many
-                          personal projects using the MERN Stack (MongoDB,
-                          Express.js , React.js, Node.js)
-                        </p>
-                      </div>
+                      <h2>The College of Staten Island</h2>
+                      <p class="subDetails">
+                        Computer Science - Class of 2017
+                      </p>
+                      <p>
+                        Relevant Courses Completed:
+                        <br />
+                        ● C++ Programming & Data Structures Object-Oriented
+                        Design.
+                        <br />
+                        ● Database Management Systems using MySQL.
+                        <br />
+                        ● Shared Memory Parallel Computing using C & MPI.
+                        <br />
+                        ● Network Security.
+                        <br />
+                      </p>
                     </article>
-                    <div class="clear"></div>
-                  </section>
-
-                  <section>
-                    <div class="sectionTitle">
-                      <h1>Work Experience</h1>
-                    </div>
-
-                    <div class="sectionContent">
-                      <article>
-                        <h2>Jr. DevOps - Shark Byte Systems, Inc</h2>
-                        <p class="subDetails">March 2017 - Present</p>
-                        <p>
-                          ● Built and maintained AWS servers running on Ubuntu
-                          and Debian.
-                          <br />
-                          ● Working on an Agile development team using Jira,
-                          BitBuckets, and Jenkins.
-                          <br />
-                          ● Using Ansible to create Linux environments for our
-                          many services.
-                          <br />
-                          ● Developed bug fixes for front-end using Javascript
-                          and cHTML.
-                          <br />
-                          ● Developed Bash scripts to speed up deployment and
-                          improve technical support on our servers.
-                          <br />
-                        </p>
-                      </article>
-
-                      <article>
-                        <h2>Intern - High Performance Computing Center</h2>
-                        <p class="subDetails">February 2016 - Decemeber 2016</p>
-                        <p>
-                          ● Provided IT support to faculty, staff and students.
-                          <br />
-                          ● Assisted users by providing/creating ssh keys and
-                          permissions in the servers.
-                          <br />
-                          ● Helped users create a secured environment in their
-                          work-station.
-                          <br />
-                          ● Maintained IT center technical equipment.
-                          <br />● Ran regular checks, tests, and tracking
-                          procedures to prevent or identify problems.
-                        </p>
-                      </article>
-                    </div>
-                    <div class="clear"></div>
-                  </section>
-
-                  <section>
-                    <div class="sectionTitle">
-                      <h1>Key Skills</h1>
-                    </div>
-
-                    <div class="sectionContent">
-                      <ul class="keySkills">
-                        <li>> React</li>
-                        <li>> Redux</li>
-                        <li>> ES6</li>
-                        <li>> Express</li>
-                        <li>> MongoDB</li>
-                        <li>> Sass</li>
-                        <li>> Linux</li>
-                        <li>> Nginx</li>
-                        <li>> Git</li>
-                      </ul>
-                    </div>
-                    <div class="clear"></div>
-                  </section>
-
-                  <section>
-                    <div class="sectionTitle">
-                      <h1>Education</h1>
-                    </div>
-
-                    <div class="sectionContent">
-                      <article>
-                        <h2>The College of Staten Island</h2>
-                        <p class="subDetails">
-                          Computer Science - Class of 2017
-                        </p>
-                        <p>
-                          Relevant Courses Completed:
-                          <br />
-                          ● C++ Programming & Data Structures Object-Oriented
-                          Design.
-                          <br />
-                          ● Database Management Systems using MySQL.
-                          <br />
-                          ● Shared Memory Parallel Computing using C & MPI.
-                          <br />
-                          ● Network Security.
-                          <br />
-                        </p>
-                      </article>
-                    </div>
-                    <div class="clear"></div>
-                  </section>
-                </div>
+                  </div>
+                  <div class="clear"></div>
+                </section>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </article>
-    <!-- ======================================= slide3 ==================================================== -->
+    </div>
+  </article>
+  <!-- ======================================= slide3 ==================================================== -->
 
-    <article id="slide03" class="hero is-fullheight ">
-      <div class="container columns">
-        <div class="head-title column is-12">
-          <h1 class="title is-1 is-size-3-mobile">Contact</h1>
-        </div>
+  <article id="slide03" class="hero is-fullheight ">
+    <div class="container columns">
+      <div class="head-title column is-12">
+        <h1 class="title is-1 is-size-3-mobile">Contact</h1>
       </div>
-      <div class="terminal container is-centered">
-        <div class="card">
-          <div class="card-image ">
-            <img
-              id="mail-Img"
-              src="https://media.giphy.com/media/Qi6AeRRm60F8c/giphy.gif"
-              alt="EmailMe"
-            />
+    </div>
+    <div class="terminal container is-centered">
+      <div class="card">
+        <div class="card-image ">
+          <img id="mail-Img" src="https://media.giphy.com/media/Qi6AeRRm60F8c/giphy.gif" alt="EmailMe" />
+        </div>
+        <div class="card-content">
+          <div class="field">
+            <label class="label is-large">Name</label>
+            <div class="control">
+              <input id="name-email" class="input" name="name" type="text" placeholder="Your Name" />
+            </div>
           </div>
-          <div class="card-content">
-            <div class="field">
-              <label class="label is-large">Name</label>
-              <div class="control">
-                <input
-                  id="name-email"
-                  class="input"
-                  name="name"
-                  type="text"
-                  placeholder="Your Name"
-                />
-              </div>
-            </div>
 
-            <div class="field">
-              <label class="label is-large">Email</label>
-              <div class="control has-icons-left has-icons-right">
-                <input
-                  id="email-email"
-                  name="email"
-                  class="input is-danger"
-                  type="email"
-                  placeholder="Email input"
-                  value="hello@"
-                />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </span>
-              </div>
+          <div class="field">
+            <label class="label is-large">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input id="email-email" name="email" class="input is-danger" type="email" placeholder="Email input"
+                value="hello@" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
             </div>
+          </div>
 
-            <div class="field">
-              <label class="label is-large">Subject</label>
-              <div class="control">
-                <input
-                  id="subject-email"
-                  name="_subject"
-                  class="input"
-                  placeholder="Subject"
-                />
-              </div>
+          <div class="field">
+            <label class="label is-large">Subject</label>
+            <div class="control">
+              <input id="subject-email" name="_subject" class="input" placeholder="Subject" />
             </div>
+          </div>
 
-            <div class="field">
-              <label class="label is-large">Message</label>
-              <div class="control">
-                <textarea
-                  id="txt-email"
-                  name="message"
-                  class="textarea"
-                  placeholder="Input your message =)"
-                ></textarea>
-              </div>
-              <label class="is-pulled-right">
-                Powered by
-                <a href="https://formspree.io">
-                  <img
-                    src="https://d1ma8knj6twvg6.cloudfront.net/static/img/logo-small.png?t=1553191086"
-                  />
-                </a>
-                FORMSPREE
-              </label>
+          <div class="field">
+            <label class="label is-large">Message</label>
+            <div class="control">
+              <textarea id="txt-email" name="message" class="textarea" placeholder="Input your message =)"></textarea>
             </div>
-            <div class="field ">
-              <div class="control is-pulled-right">
-                <input
-                  id="send-email"
-                  type="submit"
-                  class="button is-large is-link"
-                />
-              </div>
+            <label class="is-pulled-right">
+              Powered by
+              <a href="https://formspree.io">
+                <img src="https://d1ma8knj6twvg6.cloudfront.net/static/img/logo-small.png?t=1553191086" />
+              </a>
+              FORMSPREE
+            </label>
+          </div>
+          <div class="field ">
+            <div class="control is-pulled-right">
+              <input id="send-email" type="submit" class="button is-large is-link" />
             </div>
           </div>
         </div>
       </div>
-    </article>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script src="app.js"></script>
-  </body>
+    </div>
+  </article>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     triggerHook: 0.8,
     reverse: false
   })
-    .on("start", function() {
+    .on("start", function () {
       var ctx = document.getElementById("wrapper1").getContext("2d");
       var myChart = new Chart(ctx, {
         type: "horizontalBar",
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
         data: {
           labels: [
             "ExpressJS",
-            "CherioJS",
+            "CheerioJS",
             "MongoDB",
             "Mongoose",
             "CSS/Html",
@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeSpeed: 40
   });
 
-  $("#show-cv").on("click", function() {
+  $("#show-cv").on("click", function () {
     if ($("#cv").hasClass("is-hidden")) {
       $("#cv").removeClass("is-hidden");
       $("#show-cv")
@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  $("#send-email").on("click", function(e) {
+  $("#send-email").on("click", function (e) {
     e.preventDefault();
     //get the name field value
     var name = $("#name-email").val();
