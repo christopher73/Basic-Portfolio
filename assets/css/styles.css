@@ -7,13 +7,20 @@ html {
 * {
   font-family: "Roboto Mono", monospace;
 }
+#svg-breaker {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
 #intro {
   background: url(../images/blu.jpg) no-repeat;
   background-size: cover !important;
   background-position: center;
+  position: relative;
 }
 #intro {
-  height: 100vh;
+  height: 110vh;
 }
 .terminal {
   margin-bottom: 4%;

@@ -1,17 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // var trigger = document.querySelector(".card-content").offsetTop;
-  // var ele = document.querySelector("#intro");
-  // window.onscroll = function() {
-  //   if (window.pageYOffset > 0) {
-  //     var opac = window.pageYOffset / trigger;
-  //     ele.style.background =
-  //       "linear-gradient(rgba(25, 169, 143," +
-  //       opac +
-  //       "), rgba(25, 169, 143," +
-  //       opac +
-  //       ")), url(./assets/images/blu.jpg) no-repeat center";
-  //   }
-  // };
   // ==========================================scroll magic ========================================================
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
@@ -19,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     triggerHook: 0.8,
     reverse: false
   })
-    .on("start", function () {
-      var ctx = document.getElementById("wrapper1").getContext("2d");
-      var myChart = new Chart(ctx, {
+    .on("start", function() {
+      var ctx1 = document.getElementById("wrapper-flight").getContext("2d");
+      var Chart_Flight = new Chart(ctx1, {
         type: "horizontalBar",
         data: {
           labels: [
@@ -83,30 +70,28 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       });
-      var ctx2 = document.getElementById("wrapper2").getContext("2d");
-      var myChart2 = new Chart(ctx2, {
+      var ctx2 = document.getElementById("wrapper-news").getContext("2d");
+      var Chart_News = new Chart(ctx2, {
         type: "horizontalBar",
         data: {
           labels: [
             "JS",
             "CSS/Html",
-            "Jquery",
-            "Api level",
-            "AxiosJS",
+            "Ajax",
+            "MongoDB",
+            "Mongoose",
             "Bootstrap",
-
-            "Git"
+            "Express"
           ],
           datasets: [
             {
-              data: [9, 6, 6, 4, 5, 7, 6],
+              data: [9, 6, 6, 8, 7, 6, 7],
               backgroundColor: [
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
                 "rgb(75, 192, 192)",
                 "rgb(255, 206, 86)",
                 "rgb(153, 102, 255)",
-
                 "rgb(90, 20, 42)",
                 "rgb(255, 159, 64)"
               ],
@@ -148,23 +133,25 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       });
-      var ctx3 = document.getElementById("wrapper3").getContext("2d");
-      var myChart2 = new Chart(ctx3, {
+      var ctx3 = document.getElementById("wrapper-friend").getContext("2d");
+      var Chart_Friend = new Chart(ctx3, {
         type: "horizontalBar",
         data: {
           labels: [
-            "ExpressJS",
-            "CheerioJS",
-            "MongoDB",
-            "Mongoose",
+            "Express",
+            "Sequelize",
+            "MySQL",
+            "JS",
+            "Handlerbars",
             "CSS/Html",
             "Bootstrap",
-            "Git"
+            "AxiosJS"
           ],
           datasets: [
             {
-              data: [9, 7, 7, 6, 3, 6, 8],
+              data: [9, 8, 8, 9, 6, 3, 4, 7],
               backgroundColor: [
+                "rgb(90, 20, 42)",
                 "rgb(255, 99, 132)",
                 "rgb(54, 162, 235)",
                 "rgb(75, 192, 192)",
@@ -211,8 +198,114 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       });
-      var ctx4 = document.getElementById("wrapper4").getContext("2d");
-      var myChart2 = new Chart(ctx4, {
+      var ctx4 = document.getElementById("wrapper-gif").getContext("2d");
+      var Chart_Gif = new Chart(ctx4, {
+        type: "horizontalBar",
+        data: {
+          labels: ["Jquery", "Git", "CSS/Html", "Bootstrap", "Giphy's API"],
+          datasets: [
+            {
+              data: [7, 4, 6, 3, 8],
+              backgroundColor: [
+                "rgb(255, 99, 132)",
+                "rgb(54, 162, 235)",
+                "rgb(1, 19, 19)",
+                "rgb(90, 20, 42)",
+                "rgb(255, 159, 64)"
+              ],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+            }
+          },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  fontFamily: `"Roboto Mono", monospace`,
+                  fontSize: 18,
+                  fontColor: "#101c28"
+                }
+              }
+            ],
+            xAxes: [
+              {
+                display: false,
+                ticks: {
+                  max: 10,
+                  beginAtZero: true
+                }
+              }
+            ]
+          }
+        }
+      });
+      var ctx5 = document.getElementById("wrapper-burger").getContext("2d");
+      var Chart_Burger = new Chart(ctx5, {
+        type: "horizontalBar",
+        data: {
+          labels: ["JS", "MySQL", "Sequelize", "Handlerbars", "Express"],
+          datasets: [
+            {
+              data: [9, 7, 8, 6, 9],
+              backgroundColor: [
+                "rgb(255, 99, 132)",
+                "rgb(54, 162, 235)",
+                "rgb(75, 192, 192)",
+                "rgb(54, 162, 215)",
+                "rgb(255, 206, 86)"
+              ],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+            }
+          },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  fontFamily: `"Roboto Mono", monospace`,
+                  fontSize: 18,
+                  fontColor: "#101c28"
+                }
+              }
+            ],
+            xAxes: [
+              {
+                display: false,
+                ticks: {
+                  max: 10,
+                  beginAtZero: true
+                }
+              }
+            ]
+          }
+        }
+      });
+      var ctx6 = document.getElementById("wrapper-pokemon").getContext("2d");
+      var Chart_Pokemon = new Chart(ctx6, {
         type: "horizontalBar",
         data: {
           labels: ["JS", "CSS/Html", "Jquery", "Git"],
@@ -263,6 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       });
+
       //console.log("done");
     })
     .setClassToggle(".portfolioDiv", "fade-in")
@@ -310,7 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeSpeed: 40
   });
 
-  $("#show-cv").on("click", function () {
+  $("#show-cv").on("click", function() {
     if ($("#cv").hasClass("is-hidden")) {
       $("#cv").removeClass("is-hidden");
       $("#show-cv")
@@ -324,7 +418,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  $("#send-email").on("click", function (e) {
+  $("#send-email").on("click", function(e) {
     e.preventDefault();
     //get the name field value
     var name = $("#name-email").val();
@@ -341,124 +435,3 @@ document.addEventListener("DOMContentLoaded", () => {
     $("#v-button").trigger("click");
   });
 });
-// // ==========================================other "send email options"========================================================
-// $.ajax({
-//   type: "POST",
-//   url: "https://mandrillapp.com/api/1.0/messages/send.json",
-//   data: {
-//     key: "49Y0QJpcFF2okz9zAj9-Lg",
-//     message: {
-//       from_email: "cffr90@gmail.com",
-//       to: [
-//         {
-//           email: "christopher.fajardo73@gmail.com",
-//           name: "chris",
-//           type: "to"
-//         }
-//       ],
-//       autotext: "true",
-//       subject: "test123",
-//       html: "hello"
-//     }
-//   }
-// }).done(function(response) {
-//   console.log(response); // if you're into that sorta thing
-// });
-// sgMail.setApiKey(
-//   "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"
-// );
-// const msg = {
-//   to: "christopher.fajardo73@gmail.com",
-//   from: "test@example.com",
-//   subject: "Sending with SendGrid is Fun",
-//   text: "and easy to do anywhere, even with Node.js",
-//   html: "<strong>and easy to do anywhere, even with Node.js</strong>"
-// };
-// sgMail.send(msg);
-// var apiKey =
-//   "Bearer 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";
-
-// var data = JSON.stringify({
-//   personalizations: [
-//     {
-//       to: [
-//         {
-//           email: "christopher.fajardo73@gmail.com",
-//           name: "John Doe"
-//         }
-//       ],
-//       dynamic_template_data: {
-//         verb: "",
-//         adjective: "",
-//         noun: "",
-//         currentDayofWeek: ""
-//       },
-//       subject: "chris is here",
-//       content: [
-//         {
-//           type: "text/plain",
-//           value: "and easy to do anywhere, even with cURL"
-//         }
-//       ]
-//     }
-//   ],
-//   from: {
-//     email: "noreply@chris.com",
-//     name: "John Doe"
-//   },
-//   reply_to: {
-//     email: "christopher.fajardo73@gmail.com",
-//     name: "Chris Doe"
-//   },
-//   template_id: "d-8096b5dacb254c8b882816f22d1d11fe"
-// });
-
-// var xhr = new XMLHttpRequest();
-// xhr.withCredentials = false;
-
-// xhr.addEventListener("readystatechange", function() {
-//   if (this.readyState === this.DONE) {
-//     console.log(this.responseText);
-//   }
-// });
-
-// xhr.open("POST", "https://api.sendgrid.com/v3/mail/send");
-// xhr.setRequestHeader("authorization", apiKey);
-// xhr.setRequestHeader("content-type", "application/json");
-
-// xhr.send(data);
-// ==========================================scroll magic ex.========================================================
-// var pinIntroScene = new ScrollMagic.Scene({
-//   triggerElement: "#intro",
-//   triggerHook: 0,
-//   duration: "20%"
-// })
-//   .setPin("#intro", { pushFollowers: false })
-//   .addIndicators()
-//   .addTo(controller);
-
-// var pinIntroScene2 = new ScrollMagic.Scene({
-//   triggerElement: "#main-container",
-//   triggerHook: 0.4
-// })
-//   .setPin("#intro", { pushFollowers: false })
-//   .addTo(controller);
-
-// var scene = new ScrollMagic.Scene({
-//   triggerElement: "#slide01",
-//   triggerHook: 0.9,
-//   reverse: false
-// })
-//   .setClassToggle("#slide01", "fade-in")
-//   .addIndicators()
-//   .addTo(controller);
-
-// var scene01 = new ScrollMagic.Scene({
-//   triggerElement: "#slide01",
-//   triggerHook: 0.6,
-//   duration: "10%",
-//   reverse: true
-// })
-//   .setClassToggle("html", "fade")
-//   .addIndicators()
-//   .addTo(controller)
